@@ -3,8 +3,8 @@ A router for working with sellers.
 POST /seller - method for creating a seller entry in the database. Returns the created seller.
 GET /seller - method that returns all sellers.
 GET /seller/{seller_id} - method that returns a seller by its ID.
-DELETE /books/{seller_id} - method that deletes a seller by its ID.
-PUT /books/{seller_id} - method that updates the data about the seller.
+DELETE /seller/{seller_id} - method that deletes a seller by its ID.
+PUT /seller/{seller_id} - method that updates the data about the seller.
 """
 
 from typing import Annotated
