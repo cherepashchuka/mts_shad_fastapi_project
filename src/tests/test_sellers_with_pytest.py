@@ -151,7 +151,7 @@ async def test_delete_seller(db_session, async_client):
 
     response = await async_client.delete(f"/api/v1/seller/{seller.id}")
 
-    assert response.status_code == status.HTTP_204_NO_CONTENT
+    assert response.status_code == status.HTTP_200_OK
     await db_session.flush()
 
     all_sellers = await db_session.execute(select(sellers.Seller))
